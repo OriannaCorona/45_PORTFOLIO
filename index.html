@@ -8,19 +8,19 @@
     <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-    	<div class="bgTodo fixed-top">
+    	<div class="bgTodo fixed-top" >
     		<p>hola</p>
     	</div>
-    	<div class="container"><!--container-->
+    	<div class="container" id="fondoTotal"><!--container-->
     		<header>
     			<div class="row"><!--menú-->
     				<div class="col-xs-12 col-md-12 col-lg-12">
     					<div class="navbar navbar-brand navbar-fixed-top">
 	    					<nav role="navigation">
-		    					<ul id="menuPack" class="nav navbar-nav navbar-right">
-		                            <li class="menu"><a class="textDecorationNone" href="#sobre" >SOBRE MÍ <span class="rojo"><b>|</b></span></a></li>
-		                        	<li class="menu"><a class="textDecorationNone" href="#proyectos" >PROYECTOS <span class="rojo"><b>|</b></span></a></li>
-		                        	<li class="menu"><a class="textDecorationNone" href="#contacto" >CONTACTO</a></li>
+		    					<ul class="nav navbar-nav navbar-right">
+		                            <li class="menu"><a class="textDecorationNone negro" href="#sobre" >SOBRE MÍ <span class="rojo"><b>|</b></span></a></li>
+		                        	<li class="menu"><a class="textDecorationNone negro" href="#proyectos" >PROYECTOS <span class="rojo"><b>|</b></span></a></li>
+		                        	<li class="menu"><a class="textDecorationNone negro" href="#contacto">CONTACTO</a></li>
 		                        </ul>
 		                    </nav>
 		                </div>	
@@ -28,8 +28,11 @@
     			</div><!--menú cierre-->
     			<div class="row">
     				<div class="col-xs-12 col-md-12 col-lg-12">
+    					<img class="circulo" src="img_ref/circulo.png" alt="circulo fondo">
     					<h1 class="text-center rojo" id="nombre"><strong>Orianna<span id="punto">.</span></strong></h1>
+    					<img class="circulo" src="img_ref/lineaGris.png" alt="linea fondo">
     					<p class="estudios">diseñadora industrial <span class="rojo"><b>|</b></span> desarrolladora front-end</p>
+    					<img class="circulo" src="img_ref/linea.png" alt="linea fondo">
     				</div>
     			</div>
     		</header>
@@ -41,7 +44,7 @@
     			</div>
     			<div class="row">
     				<div class="col-xs-12 col-md-6 col-lg-6">
-    					<p class="text">Soy Orianna Corona Liévanos. Diseñadora industrial y desarrolladora front-end junior.<br> Interesada en vincular la tecnología con el diseño industrial, de una manera estratégica y directa logrando que mis proyectos tengan un mayor  alcance.<br>Convencida de que el trabajo en equipo resulta mucho más eniquecedor para el logro de objetivos.   
+    					<p class="text">Soy<b> Orianna Corona Liévanos</b>, diseñadora industrial y desarrolladora front-end junior, interesada en vincular la tecnología con el diseño industrial, de una manera estratégica y directa con la finalidad de lograr que mis proyectos tengan un mayor  alcance.<br>Convencida de que el trabajo en equipo resulta mucho más enriquecedor para el logro de objetivos.   
     					</p>
     					<p id="cv"><a href="" class="rojo"><b>Descarga mi cv.</b></a></p>
     				</div>
@@ -52,7 +55,7 @@
     			<section class="bgGris skills"><!--sobre mí, section habilidades-->
 	    			<div class="row">
 	    				<div class="col-xs-12 col-md-12 col-lg-12">
-	    					<h2 class="rojo">HABILIDADES</h2>	
+	    					<h2 class="rojo marginTop5">HABILIDADES</h2>	
 	    				</div>	
 	    			</div>
 	    			<div class="row">
@@ -108,7 +111,7 @@
 	    			<div class="row">
 	    				<div class="col-xs-12 col-md-12 col-lg-12">
 	    					<center>
-	    						<img src="img_ref/meto2.png">
+	    						<img src="img_ref/meto.png" alt="metodologia" id="metoImg">
 	    					</center>
 	    				</div>
 	    			</div>
@@ -120,27 +123,71 @@
     					<h2 class="rojo subTit">Proyectos</h2>
     				</div>	
     			</div>
-
     			<center><div class="row"><!--cuadricula-->
 					<div class="col-xs-12 col-md-4 col-lg-4">
-						<img src="img_ref/bola.jpg" class="img-responsive fotos">
+						<div class="img-responsive fotos" id="img1Proyectos">
+							<div class="colorHover">
+								<p class="textProyectos text-center" id="verMas"><a class="textDecorationNone rojo" ><b>Ver más.</b></a></p>
+							</div>
+						</div>
+						<div id="modal1" class="modalStyle">
+									<div class="row">
+										<div class="col-xs-12">
+											<span class="close rojo">x</span>
+											<img src="" alt="proyecto1">
+											<p>hola</p>
+										</div>	
+									</div>
+								</div>
+						<p><span id="punto" class="rojo">.</span>Wireframes design</p>
+						<p class="gris">carga de vídeos, votación.</p>
 					</div>
 					<div class="col-xs-12 col-md-4 col-lg-4">
-						<img src="img_ref/ojo.jpg" class="img-responsive fotos">
+						<div class="img-responsive fotos" id="img2Proyectos">
+							<div class="colorHover">
+								<p class="textProyectos text-center"><a href="" class="textDecorationNone rojo" target="_blank"> <b>Ver más.</b></a></p>
+							</div>
+						</div>
+						<p><span id="punto" class="rojo">.</span>Wireframes design</p>
+						<p class="gris">carga de vídeos, votación.</p>
 					</div>
 					<div class="col-xs-12 col-md-4 col-lg-4">
-						<img src="img_ref/proto.jpg" class="img-responsive fotos">
+						<div class="img-responsive fotos" id="img3Proyectos">
+							<div class="colorHover">
+								<p class="textProyectos text-center"><a href="" class="textDecorationNone rojo" target="_blank"> <b>Ver más.</b></a></p>
+							</div><!--ogilvy-->
+						</div>
+						<p><span id="punto" class="rojo">.</span>Wireframes design</p>
+						<p class="gris">carga de vídeos, votación.</p>
 					</div>	
 				</div>
 				<div class="row"><!--cidi-->
 					<div class="col-xs-12 col-md-4 col-lg-4">
-						<img src="img_ref/kerenta.jpg" class="img-responsive fotos"><!--keren-ta-->
+						<div class="img-responsive fotos" id="img4Proyectos">
+							<div class="colorHover">
+								<p class="textProyectos text-center"><a href="" class="textDecorationNone rojo" target="_blank"> <b>Ver más.</b></a></p>
+							</div><!--kerenta-->
+						</div>
+						<p><span id="punto" class="rojo">.</span>Wireframes design</p>
+						<p class="gris">carga de vídeos, votación.</p>
 					</div>
 					<div class="col-xs-12 col-md-4 col-lg-4">
-						<img src="img_ref/zlup.jpg" class="img-responsive fotos"><!--zlup-->
+						<div class="img-responsive fotos" id="img5Proyectos">
+							<div class="colorHover">
+								<p class="textProyectos text-center"><a href="" class="textDecorationNone rojo" target="_blank"> <b>Ver más.</b></a></p>
+							</div><!--zlup-->
+						</div>
+						<p><span id="punto" class="rojo">.</span>Experience and product design</p>
+						<p class="gris">carga de vídeos, votación.</p>
 					</div>
 					<div class="col-xs-12 col-md-4 col-lg-4">
-						<img src="img_ref/ogilvy.jpg" class="img-responsive fotos"><!--ogilvy-->
+						<div class="img-responsive fotos" id="img6Proyectos">
+							<div class="colorHover">
+								<p class="textProyectos text-center"><a href="" class="textDecorationNone rojo" target="_blank"> <b>Ver más.</b></a></p>
+							</div><!--ogilvy-->
+						</div>
+						<p><span id="punto" class="rojo">.</span>Wireframes design</p>
+						<p class="gris">carga de vídeos, votación.</p>
 					</div>
 				</div></center>		
     		</section><!--proyectos cierre-->

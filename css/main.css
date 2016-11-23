@@ -6,6 +6,9 @@
 	position: absolute;
 	z-index: -1;
 }
+#circulo {
+	background-image: url("../img_ref/circulo.png");
+}
 * {
 	font-family: 'Questrial', sans-serif;
 }
@@ -35,7 +38,9 @@
 }
 .textDecorationNone, .menu {
 	text-decoration: none;
-	color: black !important;
+}
+.negro {
+	color: black !important;	
 }
 .menu, .menu2 {
 	display: inline;
@@ -49,6 +54,7 @@
 	list-style-type: none;
 	margin: 0% -1%;	
 }
+/*sobre mí*/
 .subTit {
 	font-size: 6em;
 	font-weight: 700;
@@ -59,13 +65,16 @@
 .gris {
 	color: #ababab;
 }
-.fotos, .fotoYo {
+.fotos, .colorHover {
+	width: 80%;
+}
+.fotos, .fotoYo, .colorHover {
 	height: 280px;
-	width: 280px;
 }
 .fotoYo {
 	margin-top: -16%;
 	float: right;
+	width: 50%;	
 }
 .bgGris {
 	background-color: #f4f4f4;
@@ -74,9 +83,86 @@
 .subTit2 {
 	margin-left: 7%;
 }
+.marginTop5 {
+	margin-top: 5%;
+}
 .skills {
 	margin-bottom: 3.5%;
 }
 .block {
 	display: block;
+}
+#metoImg {
+	width: 60%;
+	margin-bottom: 5%;
+}
+/*proyectos*/
+#img1Proyectos {
+	background-image: url("../img_ref/ojo.jpg");
+}
+#img2Proyectos {
+	background-image: url("../img_ref/ojo.jpg");
+}
+#img3Proyectos {
+	background-image: url("../img_ref/proto.jpg");
+}
+#img4Proyectos {
+	background-image: url("../img_ref/kerenta.jpg");
+}
+#img5Proyectos {
+	background-image: url("../img_ref/zlup.jpg");
+}
+#img6Proyectos {
+	background-image: url("../img_ref/ogilvy.jpg");
+}
+.colorHover {
+	background-color: rgba(255,255,255,0.7);
+	overflow: hidden;
+	width: 113%;
+	margin-left: -6%;
+	opacity: 0;
+}
+div #img1Proyectos:hover div.colorHover,
+div #img2Proyectos:hover div.colorHover,
+div #img3Proyectos:hover div.colorHover,
+div #img4Proyectos:hover div.colorHover,
+div #img5Proyectos:hover div.colorHover,
+div #img6Proyectos:hover div.colorHover{
+	opacity: 1;
+}
+.textProyectos {
+	margin-top: 45%;
+}
+.modalStyle {
+	z-index: 1;
+	position: fixed; 
+	width: 100%;
+	height: 100%; 
+	top: 0; 
+	left: 0;
+	border: #333333 3px solid; 
+	background-color: pink; 
+	color: #000000; 
+	display:none;
+}
+/*pruebas movimiento
+.circulo {
+	width: 10%;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-animation: spin 4s linear alternate infinite;
+	-moz-animation: spin 4s linear alternate infinite;	
+}
+@-moz-keyframes spin { 100% {-moz-transform:rotate(360deg);}}
+@-webkit-keyframes spin { 100% {-webkit-transform:rotate(360deg);}}
+@keyframes spin {100% {-webkit-transform:rotate(360deg);}}
+ finpruebas movimiento*/
+#fondoTotal .nieve { 
+position: absolute; 
+top: 0; left: 0; 
+width: 6vmin; 
+height: 6vmin;
+border-radius: 100%; 
+border: solid #ffa3a7 1.5px;
 }
