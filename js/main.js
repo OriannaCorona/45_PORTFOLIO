@@ -4,21 +4,7 @@
 	});
 });
 */
-//modals
-var modal = document.getElementById('modal1');
-var btn = document.getElementById("verMas");
-var span = document.getElementsByClassName("close")[0]; 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-span.onclick = function() {
-    modal.style.display = "none";
-}
-window.onclick = function(e) {
-    if (e.target == modal) {
-        modal.style.display = "none";
-    }
-}
+//circulos fondo
 onload = inicia; 
 
 var cantidadCirculos = 5; 
@@ -42,8 +28,8 @@ function inicia() {
   setTimeout(function(){
     for(c=0; c<cantidadCirculos; c++) {
     elCirculo = document.querySelectorAll("#fondoTotal .nieve")[c]; 
-    elCirculo.style.left = Math.floor(Math.random()*100)+ "vw"; 
-    elCirculo.style.transition = "top 5ms linear"; 
+    elCirculo.style.left = Math.floor(Math.random()*50)+ "vw"; 
+    elCirculo.style.transition = "top 10ms linear"; 
     elCirculo.style.top = elCirculo.style.top = ".5vh";
     }
   }, 15);

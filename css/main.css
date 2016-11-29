@@ -1,19 +1,29 @@
 /*header*/
-#bgRosa {
-	background-color: ;
-	width:100%;
-	height: 300px;
-	position: absolute;
-	z-index: -1;
+.navbar-nav {
+	background-color: rgba(255, 219, 221, 0.5);
+	width: 32.9%;
+	float: right;
 }
-#circulo {
-	background-image: url("../img_ref/circulo.png");
+.menu {	
+	margin: 0%;
+}
+.linea-menu {
+	margin.left: 10%;
+}
+.menu-mobile {
+	border: #FF4F58 solid 0.5px !important;
+}
+.menu-mobile-lg {
+	border: #FF4F58 solid 0.5px !important;
+}
+.menu-mobile-xs {
+	border: #FF4F58 solid 1px !important;	
 }
 * {
 	font-family: 'Questrial', sans-serif;
 }
 #punto, #nombre {
-	margin-top: 12%;
+	margin-top: 17%;
 } 
 #punto, .puntoSkills {
 	font-family: 'Source Code Pro', monospace; 
@@ -33,26 +43,28 @@
 .estudios {
 	margin: 0% 0% 25% 39.5%;
 }
-#menuPack {
-	/*margin: 1% 0% 0% 74.5%;*/
-}
 .textDecorationNone, .menu {
 	text-decoration: none;
 }
 .negro {
 	color: black !important;	
 }
-.menu, .menu2 {
+.menu, .habilidades {
 	display: inline;
 	list-style-type: none;
 }
-.menu {	
-	margin: 0% -3%;
-}
-.menu2 {
-	display: inline;
-	list-style-type: none;
+.habilidades {
 	margin: 0% -1%;	
+}
+#herramientasDig {
+	margin-left: 8.5%;
+}
+#desarrolloWeb {
+	margin-left: 19.8%;
+}
+.emocionales {
+	display: block;
+	margin: 0% 0% 3% 25%;
 }
 /*sobre mí*/
 .subTit {
@@ -65,7 +77,10 @@
 .gris {
 	color: #ababab;
 }
-.fotos, .colorHover {
+.fotos {
+	background-size: 100%;
+}
+.colorHover {
 	width: 80%;
 }
 .fotos, .fotoYo, .colorHover {
@@ -97,23 +112,26 @@
 	margin-bottom: 5%;
 }
 /*proyectos*/
+#proyectos {
+	margin-bottom: 26%;
+}
 #img1Proyectos {
-	background-image: url("../img_ref/ojo.jpg");
+	background-image: url("../img_ref/MacBookPortafolio.jpg");
 }
 #img2Proyectos {
-	background-image: url("../img_ref/ojo.jpg");
+	background-image: url("../img_ref/macbookflatness.jpg");
 }
 #img3Proyectos {
-	background-image: url("../img_ref/proto.jpg");
+	background-image: url("../img_ref/NewMacBookkane.jpg");
 }
 #img4Proyectos {
-	background-image: url("../img_ref/kerenta.jpg");
+	background-image: url("../img_ref/kerenta.png");
 }
 #img5Proyectos {
-	background-image: url("../img_ref/zlup.jpg");
+	background-image: url("../img_ref/NewMacBookOgilvy.jpg");
 }
 #img6Proyectos {
-	background-image: url("../img_ref/ogilvy.jpg");
+	background-image: url("../img_ref/zlup_logo.png");
 }
 .colorHover {
 	background-color: rgba(255,255,255,0.7);
@@ -130,20 +148,42 @@ div #img5Proyectos:hover div.colorHover,
 div #img6Proyectos:hover div.colorHover{
 	opacity: 1;
 }
-.textProyectos {
-	margin-top: 45%;
+.segundosProy {
+	margin-top: 2%;	
 }
-.modalStyle {
-	z-index: 1;
-	position: fixed; 
-	width: 100%;
-	height: 100%; 
-	top: 0; 
-	left: 0;
-	border: #333333 3px solid; 
-	background-color: pink; 
-	color: #000000; 
-	display:none;
+/*botones*/
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  transition: .3s ease-out;
+}
+.waves-effect .waves-ripple {
+  z-index: -1;
+}
+/**aqui se cambia el color de bg*/
+.btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #FF4F58;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+/**aqui se cambia el color de bg en el hover*/
+.btn:hover, .btn-large:hover {
+  background-color: white;
+  color: #FF4F58;
 }
 /*pruebas movimiento
 .circulo {
@@ -158,11 +198,81 @@ div #img6Proyectos:hover div.colorHover{
 @-webkit-keyframes spin { 100% {-webkit-transform:rotate(360deg);}}
 @keyframes spin {100% {-webkit-transform:rotate(360deg);}}
  finpruebas movimiento*/
-#fondoTotal .nieve { 
+/*#fondoTotal .nieve { 
 position: absolute; 
 top: 0; left: 0; 
 width: 6vmin; 
 height: 6vmin;
 border-radius: 100%; 
-border: solid #ffa3a7 1.5px;
+border: solid #ffdbdd 2px;
+}*/
+#fondoTotal {
+	background-image: url("../img_ref/bg-square.jpg");
+	background-repeat: ;
+	background-attachment: fixed;
 }
+
+
+/*contacto*/
+#contacto {
+	margin: -20% 0% 10% 0%;
+}
+.mgbot5 {
+	margin-bottom: 5%;
+}
+.mgbot10 {
+	margin-bottom: 10%;
+}
+.mgbot20 {
+	margin-bottom: 20%;
+}
+.mgLeft19 {
+	margin-left: 19%;
+}
+.mgLeft33 {
+	margin-left: 33%;
+}
+.mgTop10 {
+	margin-top: 13%;
+}
+/*responsive*/
+@media screen and (max-width: 600px) {
+	#fondoTotal {
+		width: 100%;
+	}
+	.navbar-nav {
+		width: 80%;
+		float: right;
+		margin-right: 10%;
+	}
+	.menu {
+		text-align: right;
+	}
+	#nombre {
+		font-size: 8em;
+		margin: 50% 0% 0% 0%;
+	}
+	#herramientasDig, #desarrolloWeb, .ubicacionEmail {
+		margin: 0%;
+	}
+	.estudios {
+		font-size: 1em;
+		margin: 0% 0% 50% 0%;
+	}
+	.estudios, #cv, #herramientasDig, #desarrolloWeb, .emocionales, #proyectos, #contacto, .ubicacionEmail, .redes {
+		text-align: center;
+	}
+	.emocionales {
+		margin-left: 0%
+	}
+	.redes {
+		margin-bottom: 2%;
+	}
+	#e-mail {
+		margin-top: 15%;
+	}
+	#gmail {
+		margin-bottom: 8%;
+	}
+}
+
