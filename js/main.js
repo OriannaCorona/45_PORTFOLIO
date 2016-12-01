@@ -3,7 +3,9 @@
 	$(this).css("background-color", "pink");
 	});
 });
-*/
+
+
+
 //circulos fondo
 onload = inicia; 
 
@@ -28,7 +30,7 @@ function inicia() {
   setTimeout(function(){
     for(c=0; c<cantidadCirculos; c++) {
     elCirculo = document.querySelectorAll("#fondoTotal .nieve")[c]; 
-    elCirculo.style.left = Math.floor(Math.random()*50)+ "vw"; 
+    elCirculo.style.left = Math.floor(Math.random()*100)+ "vw"; 
     elCirculo.style.transition = "top 10ms linear"; 
     elCirculo.style.top = elCirculo.style.top = ".5vh";
     }
@@ -49,4 +51,21 @@ function caida(T) {
   T.style.top = "110vh"; 
   }, 15);  
 }
+*/
 
+/*$(document).ready(function(){
+    $("#img_2").hover(function(){
+      $(this).css("background-color", "pink");
+    });
+});*/
+
+//para controlar el video de zlup y empiece a correr cuando se le dé click
+$(document).ready (function() {
+  $('#video_zlup').on('click', function() {
+    $(this).get(0).play();
+  });
+  
+  $('#video_zlup').on('click', function() {
+    $(this).get(0).pause();
+  });
+});
