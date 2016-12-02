@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
     <title>Portafolio</title>
     <link href="https://fonts.googleapis.com/css?family=Questrial|Source+Code+Pro" rel="stylesheet">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -10,7 +11,7 @@
     <body>
     	<div class="container-fluid" id="fondoTotal">	
 			<div class="container"><!--container-->
-				<header id="home">
+				<header>
 					<div class="row"><!--menú-->
 						<nav class="navbar navbar-fixed-top" role="navigation">
 							<div class="navbar-header">			
@@ -31,13 +32,15 @@
 			                </div>
 		                </nav>        					
 					</div><!--menú cierre-->
+				</header>
+				<section id="home">
 					<div class="row">
 						<div class="col-xs-12 col-md-12 col-lg-12">
 							<h1 class="text-center rojo" id="nombre"><strong>Orianna<span id="punto">.</span></strong></h1>
 							<p class="estudios">diseñadora industrial <span class="rojo"><b>|</b></span> desarrolladora front-end</p>
 						</div>
 					</div>
-				</header>
+				</section>
 				<section id="sobre"><!--sobre mí-->
 					<div class="row">
 						<div class="col-xs-12 col-md-12 col-lg-12">
@@ -108,7 +111,7 @@
 		    					</ul>	
 		    				</div>
 		    				<div class="col-xs-12 col-md-4 col-lg-4">
-		    					<center><h3 class="subTit2">Emocionales.</h3></center>
+		    					<center><h3 class="subTit2 text-center">Emocionales.</h3></center>
 		    					<ul id="emo">
 		    						<li class="emocionales"><span id="punto" class="rojo">.</span>Trabajo en equipo
 		    						</li>
@@ -171,8 +174,8 @@
 		                  			</div>
 		                		</div><!--modal cierre-->
 							</div>
-							<p><span id="punto" class="rojo">.</span>Portfolio Coder</p>
-							<p class="gris">desarrollo responsive front-end.</p>
+							<p class="proyectoTit"><span id="punto" class="rojo">.</span>Portfolio Coder</p>
+							<p class="gris proyectoDes">Desarrollo front-end <span class="rojo">|</span> Desktop - mobile.</p>
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4">
 							<div class="img-responsive fotos" id="img2Proyectos">
@@ -200,8 +203,8 @@
 		                  			</div>
 		                		</div><!--modal cierre-->
 							</div>
-							<p><span id="punto" class="rojo">.</span>Flatness</p>
-							<p class="gris">desarrollo responsive front-end.</p>
+							<p class="proyectoTit"><span id="punto" class="rojo">.</span>Flatness</p>
+							<p class="gris proyectoDes">Desarrollo front-end <span class="rojo">|</span> Desktop - mobile.</p>
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4">
 							<div class="img-responsive fotos" id="img3Proyectos">
@@ -228,8 +231,8 @@
 		                  			</div>
 		                		</div><!--modal cierre-->
 							</div>
-							<p><span id="punto" class="rojo">.</span>Kane Theme</p>
-							<p class="gris">Desarrollo front-end <span class="rojo">|</span> Desktop - mobile.</p>
+							<p class="proyectoTit"><span id="punto" class="rojo">.</span>Kane Theme</p>
+							<p class="gris proyectoDes">Desarrollo front-end <span class="rojo">|</span> Desktop - mobile.</p>
 						</div>	
 					</div>
 					<div class="row segundosProy"><!--cidi-->
@@ -257,8 +260,8 @@
 		                  			</div>
 		                		</div><!--modal cierre-->
 							</div>
-							<p><span id="punto" class="rojo">.</span>Keren-Ta + LabCDMX</p>
-							<p class="gris">diseño de experiencia.</p>
+							<p class="proyectoTit"><span id="punto" class="rojo">.</span>Keren-Ta + LabCDMX</p>
+							<p class="gris proyectoDes">diseño de experiencia.</p>
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4">
 							<div class="img-responsive fotos" id="img5Proyectos">
@@ -284,8 +287,8 @@
 		                  			</div>
 		                		</div><!--modal cierre-->	
 							</div>
-							<p><span id="punto" class="rojo">.</span>Ogilvy</p>
-							<p class="gris">Information arquitecture y desarrollo de plataforma.</p>
+							<p class="proyectoTit"><span id="punto" class="rojo">.</span>Ogilvy</p>
+							<p class="gris proyectoDes">Information arquitecture y desarrollo de plataforma.</p>
 						</div>
 						<div class="col-xs-12 col-md-4 col-lg-4">
 							<div class="img-responsive fotos" id="img6Proyectos">
@@ -306,7 +309,7 @@
 		                        					<source src="img_ref/zlup_video.mp4" type="video/mp4" frameborder="0">
 		                        				</video><!--video-->
 		                        				<div id="buttonbar">
-    												<button id="play" onclick="playVideo()" class="btn waves-effect btn-large waves-ripple" type="button">&gt;</button>
+    												<button id="play" onclick="playVideo()" class="btn waves-effect btn-large waves-ripple" type="button">play</button>
 												</div>
 		                      				</div>
 		                      				<div class="modal-footer">
@@ -316,8 +319,8 @@
 		                  			</div>
 		                		</div><!--modal cierre-->	
 							</div>
-							<p><span id="punto" class="rojo">.</span>Zlup</p>
-							<p class="gris">diseño de producto, experiencia y servicio.</p>
+							<p class="proyectoTit"><span id="punto" class="rojo">.</span>Zlup</p>
+							<p class="gris proyectoDes">diseño de producto, experiencia y servicio.</p>
 						</div>
 					</div></center>		
 				</section><!--proyectos cierre-->
@@ -335,19 +338,19 @@
 						<div class="col-xs-12 col-md-4 col-lg-4">
 							<div class="row mgTop10">
 								<div class="col-xs-4 hidden-md hidden-lg">
-									<center><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank"><img src="img_ref/git-red.png" alt="icon-git"></a></center>	
+									<center><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank"><img src="img_ref/git-red.png" alt="icon-git" class="i-redes"></a></center>	
 								</div>
 								<div class="hidden-xs col-md-4 col-lg-4">
 									<h4 class=""><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank">Github.</a></h4>	
 								</div>
 								<div class="col-xs-4 hidden-md hidden-lg">
-									<center><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank"><img src="img_ref/link-red.png" alt="icon-linkedin"></a></center>	
+									<center><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank"><img src="img_ref/link-red.png" alt="icon-linkedin" class="i-redes"></a></center>	
 								</div>
 								<div class="hidden-xs col-md-4 col-lg-4">
 									<h4 class=""><a href="https://mx.linkedin.com/in/orianna-corona" class="subTit2 rojo redes" target="_blank">LinkedIn.</a></h4>		
 								</div>
 								<div class="col-xs-4 hidden-md hidden-lg">
-									<center><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank"><img src="img_ref/ins-red.png" alt="icon-instagram"></a></center>	
+									<center><a href="https://github.com/OriannaCorona" class="subTit2 rojo redes" target="_blank"><img src="img_ref/ins-red.png" alt="icon-instagram" class="i-redes"></a></center>	
 								</div>
 								<div class="hidden-xs col-md-4 col-lg-4">
 									<h4 class="redes"><a href="https://www.instagram.com/orianna.corona/" class="subTit2 rojo redes" target="_blank">Instagram.</a></h4>		
@@ -361,7 +364,11 @@
 					</div>				
 				</section><!--contacto cierre-->
 				<footer>
-					<p class="text-center mgbot10">Designed by Orianna Corona Liévanos <span class="rojo"><b>|</b></span> Laboratoria México</p>
+					<div class="row">
+						<div class="col-xs-12 col-md-12 col-lg-12">
+							<p class="text-center mgbot10" id="derechos">Designed by Orianna Corona Liévanos <span class="rojo"><b>|</b></span> Laboratoria México</p>	
+						</div> 
+					</div>
 				</footer>
 			</div><!--container cierre-->
 		</div>

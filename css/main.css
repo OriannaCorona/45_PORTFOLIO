@@ -1,6 +1,6 @@
 /*header*/
 .navbar-nav {
-	background-color: rgba(255, 219, 221, 0.5);
+	background-color: rgba(255, 219, 221, 0.9);
 	width: 32.9%;
 	float: right;
 }
@@ -10,10 +10,7 @@
 .linea-menu {
 	margin.left: 10%;
 }
-.menu-mobile {
-	border: #FF4F58 solid 0.5px !important;
-}
-.menu-mobile-lg {
+.menu-mobile, .menu-mobile-lg {
 	border: #FF4F58 solid 0.5px !important;
 }
 .menu-mobile-xs {
@@ -242,7 +239,7 @@ border: solid #ffdbdd 2px;
 	margin-top: 13%;
 }
 /*responsive*/
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 768px) {
 	#fondoTotal {
 		width: 100%;
 	}
@@ -255,7 +252,7 @@ border: solid #ffdbdd 2px;
 		text-align: right;
 	}
 	#nombre {
-		font-size: 8em;
+		font-size: 6em;
 		margin: 50% 0% 0% 0%;
 	}
 	#herramientasDig, #desarrolloWeb, .ubicacionEmail {
@@ -265,8 +262,15 @@ border: solid #ffdbdd 2px;
 		font-size: 1em;
 		margin: 0% 0% 50% 0%;
 	}
+	.subTit {
+		font-size: 4em;
+	}
 	.estudios, #cv, #herramientasDig, #desarrolloWeb, .emocionales, #proyectos, #contacto, .ubicacionEmail, .redes {
 		text-align: center;
+	}
+	.i-redes {
+		height: 65%;
+		width: 65%;
 	}
 	.emocionales {
 		margin-left: 0%
@@ -277,8 +281,13 @@ border: solid #ffdbdd 2px;
 	width: 80%;
 	background-repeat: no-repeat;
 	}
-	.colorHover {
-		
+	.proyectoTit {
+		margin-top: -20%;
+		font-size: 130%;
+	}
+	.proyectoDes {
+		font-size: 120%;
+		margin-bottom: 15%;	
 	}
 	.redes {
 		margin-bottom: 2%;
@@ -288,6 +297,9 @@ border: solid #ffdbdd 2px;
 	}
 	#gmail {
 		margin-bottom: 8%;
+	}
+	#derechos {
+		font-size: 70%;
 	}
 }
 
