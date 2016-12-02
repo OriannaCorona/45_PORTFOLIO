@@ -253,14 +253,14 @@ border: solid #ffdbdd 2px;
 	}
 	#nombre {
 		font-size: 6em;
-		margin: 50% 0% 0% 0%;
+		margin: 90% 0% 0% 0%;
 	}
 	#herramientasDig, #desarrolloWeb, .ubicacionEmail {
 		margin: 0%;
 	}
 	.estudios {
 		font-size: 1em;
-		margin: 0% 0% 50% 0%;
+		margin: 0% 0% 90% 0%;
 	}
 	.subTit {
 		font-size: 4em;
