@@ -45,10 +45,6 @@ template {
 a {
   background-color: transparent;
 }
-a:active,
-a:hover {
-  outline: 0;
-}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -197,10 +193,6 @@ th {
     background: transparent !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
   }
   a[href]:after {
     content: " (" attr(href) ")";
@@ -1099,15 +1091,6 @@ textarea {
 a {
   color: #337ab7;
   text-decoration: none;
-}
-a:hover,
-a:focus {
-  color: #23527c;
-  text-decoration: underline;
-}
-a:focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
 }
 figure {
   margin: 0;
@@ -3987,8 +3970,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
-  text-decoration: none;
-  background-color: #eee;
+  text-decoration: underline;
+  background-color: pink;
 }
 .nav > li.disabled > a {
   color: #777;
@@ -4003,7 +3986,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-  background-color: #eee;
+  background-color: pink;
   border-color: #337ab7;
 }
 .nav .nav-divider {
@@ -4036,7 +4019,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #fff;
+  background-color: red;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
 }
