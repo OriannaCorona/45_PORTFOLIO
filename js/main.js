@@ -57,15 +57,40 @@ function caida(T) {
     $("#img_2").hover(function(){
       $(this).css("background-color", "pink");
     });
-});*/
+});
 
 //para controlar el video de zlup y empiece a correr cuando se le dé click
 $(document).ready (function() {
-  $('#video_zlup').on('click', function() {
+  $('#video_zlup').click (function playVideo() {
     $(this).get(0).play();
   });
+});
   
-  $('#video_zlup').on('click', function() {
+  $('#video_zlup').click (function pauseVideo() {
     $(this).get(0).pause();
   });
-});
+*/
+
+function playVideo() {
+  
+  var video = document.getElementById("video_zlup");
+  var button = document.getElementById("play")
+       
+    if (video.paused) {
+      video.play();
+      button.textContent = "pause";
+    } else {
+      video.pause();
+      button.textContent = "play";
+    }
+
+    function restart() {
+      video.currentTime = 0;
+    }
+
+    function skip(value) {
+      video.currentTime += value;
+    } 
+}
+
+ 
