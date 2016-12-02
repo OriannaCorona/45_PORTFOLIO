@@ -265,8 +265,9 @@ border: solid #ffdbdd 2px;
 	.subTit {
 		font-size: 4em;
 	}
-	.estudios, #cv, #herramientasDig, #desarrolloWeb, .emocionales, #proyectos, #contacto, .ubicacionEmail, .redes {
-		text-align: center;
+	.estudios, .colorHover, #cv, #herramientasDig, #desarrolloWeb, .emocionales, #proyectos, #contacto, .ubicacionEmail, .redes {
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.i-redes {
 		height: 65%;
@@ -284,8 +285,6 @@ border: solid #ffdbdd 2px;
 	.colorHover {
 		width: 100%;
 		height: 57%;
-		margin-left: auto;
-		margin-right: auto;
 	}
 	.proyectoTit {
 		margin-top: -43%;
